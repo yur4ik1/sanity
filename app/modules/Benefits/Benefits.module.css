@@ -1,0 +1,90 @@
+
+
+.benefits .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-7xl);
+}
+
+.benefits__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-4xl);
+}
+
+.benefits__item {
+  max-width: var(--width-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-2xl);
+  position: relative;
+}
+
+.benefits__item::after {
+  content: "";
+  background: url(https://25792325.fs1.hubspotusercontent-eu1.net/hubfs/25792325/raw_assets/public/soax-theme-live/images/v4/benefits-gradient.svg) no-repeat center top/cover;
+  width: var(--benefits-item-after-width);
+  height: var(--benefits-item-after-height);
+  position: absolute;
+  z-index: -1;
+  top: var(--benefits-item-after-top);
+}
+
+.benefits__icon {
+  display: flex;
+  width: var(--spacing-8xl);
+  height: var(--spacing-8xl);
+  padding: var(--benefits-icon-padding);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-16);
+  border: 1px solid var(--color-base-white);
+  background: var(--color-base-white);
+  box-shadow: var(--shadow-lg);
+  -webkit-backdrop-filter: blur(var(--benefits-icon-blur));
+  backdrop-filter: blur(var(--benefits-icon-blur));
+}
+
+.benefits__icon img {
+  width: var(--benefits-icon-img-width);
+  height: var(--benefits-icon-img-height);
+}
+
+
+.benefitsTitle {
+  margin-bottom: var(--spacing-sm);
+  text-align: center;
+}
+
+.benefitsDesc {
+  text-align: center;
+}
+
+.benefitsCta {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+   /* benefits module */
+  .benefits .container {
+    gap: var(--spacing-6xl);
+  }
+
+  .benefits__icon {
+    width: 64px;
+    height: 64px;
+    padding: 17px;
+    box-shadow: var(--shadow-lg);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+
+  .benefits__icon img {
+    width: 28.8px;
+    height: 28.8px;
+  }
+}

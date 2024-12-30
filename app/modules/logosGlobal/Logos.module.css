@@ -1,0 +1,34 @@
+
+.logos {
+  overflow: hidden;
+}
+
+.logos .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-6xl);
+}
+
+.logos .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--logos-items-gap);
+}
+
+.logos .items img {
+  opacity: var(--logos-items-img-opacity);
+  width: 100%;
+  height: var(--logos-items-img-height);
+}
+
+@media screen and (max-width: 768px) {
+  .logos .items {
+    gap: var(--spacing-4xl);
+  }
+
+  .logos .items img {
+    height: auto;
+  }
+}
