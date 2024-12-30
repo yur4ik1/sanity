@@ -2,7 +2,7 @@ import { client } from '../sanity/sanity';
 import { pageQuery } from '../sanity/queries';
 import Page from './[slug]/page';
 
-export const revalidate = 10; // ISR: Оновлювати сторінку кожні 60 секунд
+export const revalidate = 60; // ISR: Оновлювати сторінку кожні 60 секунд
 
 export default async function Home() {
     const slug = 'home';
