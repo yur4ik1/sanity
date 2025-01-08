@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr">
       <head>
+        <meta name="robots" content="noindex, nofollow">
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
